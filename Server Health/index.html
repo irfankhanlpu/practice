@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title> Server Health Dashboard </title>
+	<link rel="icon" href="Images/1.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Styles/style1.css">
+	<script src="Scripts/script1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-sm-1" style="height:100%; background-color:black;">
+				<ul class="nav nav-pills nav-stacked" style="margin-top:20px; background-color:black; color:white">
+    					<li class="active"><a data-toggle="tab" style="color:white;" href="#home">Overview</a></li>
+   					<li><a data-toggle="tab" style="color:white;" href="#menu1">Menu 1 </a></li>
+					<li><a data-toggle="tab" style="color:white;" href="#menu2">Menu 2</a></li>
+					<li><a data-toggle="tab" style="color:white;" href="#menu3">Menu 3</a></li>
+				</ul>
+  				
+			</div>
+
+
+		
+			<div class="col-sm-11" >
+				<div class="row" style="background-color:white;">
+					<div class="col-sm-2" style="background-color:white; height:50px" > 
+					
+					
+						<form> 
+							<img src="Images/1.png" alt="logo" height="30px" width="30px"/>				
+							<input class="input1" type="text" style="background-color:#e5e5e5" placeholder="      Search Servers"/> 
+							<button style="border-radius:15px; height:30px" type="Submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span></button>	
+						</form>
+					</div>
+					<div class="col-sm-5" style="background-color:white;height:50px"></div>
+
+					<div class="col-sm-5" style="background-color:white;height:50px">
+						<div class="col-sm-2 nav-bar-allignment"><button type="button" class="btn1"><span>Not Responding</span></button></div> 
+						<div class="col-sm-2 nav-bar-allignment"><button type="button" class="btn1"><span>No Issues</span></button></div> 
+						<div class="col-sm-2 nav-bar-allignment"><button type="button" class="btn1"><span>Issues</span></button></div>
+						<div class="col-sm-2 nav-bar-allignment"><button type="button" class="btn1"><span>Maintenance</span></button></div>
+						<div class="col-sm-2 nav-bar-allignment">
+							<button type="button" class="btn1">
+          						<span class="glyphicon glyphicon-bell"></span></button>
+						</div>
+						<div class="col-sm-2 nav-bar-allignment"><button type="button" class="btn1"><span>Admin</span></button></div>
+					</div>
+				</div>
+
+				<div class="row" style="background-color:#d6d8db;  ">
+					<div class="col-xs-1" style="width:1%" > </div>
+
+					<div class="col-xs-6">
+						<div ><h1 style="color:black; margin:2px; "> Dashboard</h1></div>
+						<div ><h5>Global overview of your servers health</h5></div>
+					</div>
+
+
+				</div>
+				
+				<div class="row " >
+					<div class="tab-content">
+						<div id="home" class="tab-pane fade in active" >
+							<div class="container-fluid">
+								<div class="row" style="background-color:#eaedeb;height:86.5%">
+									<div class ="col-sm-8">
+									<div class="col-sm-6">
+										<div class="container-fluid">
+											<div id="block">
+												<div id="block-div" style="color:#fc3802"><span class="span-max">0</span><br><span class="span-min">Servers are <b>Not Responding</b></span></div>
+												<button id="block-btn" style="background-color:#fc3802"><span class="glyphicon glyphicon-arrow-right"></span><span> Show me the list </span></button>
+											</div>
+											<div id="block">
+												<div id="block-div" style="color:#fc7b0a"><span class="span-max">0</span><br><span class="span-min">Servers <b>Have Issues</b></span></div>
+												<button id="block-btn" style="background-color:#fc7b0a"><span class="glyphicon glyphicon-arrow-right"></span><span> Show me the list </span></button>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="container-fluid">
+											<div id="block">
+												<div id="block-div" style="color:#3d994a"><span class="span-max">0</span><br><span class="span-min">Servers <b>Without Issues</b></span></div>
+												<button id="block-btn" style="background-color:#3d994a"><span class="glyphicon glyphicon-arrow-right"></span><span> Show me the list </span></button>
+											</div>
+											<div id="block">
+												<div id="block-div" style="color:#555656"><span class="span-max">0</span><br><span class="span-min">Servers are <b>In Maintenance</b></span></div>
+												<button id="block-btn" style="background-color:#555656"><span class="glyphicon glyphicon-arrow-right"></span><span> Show me the list </span></button>
+											</div>
+										</div>
+									</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="container-fluid">
+											<div class="container-fluid" id="list-block">
+												<ul class="nav nav-pills nav-stacked" style="margin-top:20px;margin-bottom:20px; background-color:white; color:black">
+   													<li><a data-toggle="tab" style="color:black;" href="#">server1</a></li>
+													<li><a data-toggle="tab" style="color:black;" href="#">server2</a></li>
+													<li><a data-toggle="tab" style="color:black;" href="#">server3</a></li>
+													<li><a data-toggle="tab" style="color:black;" href="#">server4</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="menu1" class="tab-pane fade">
+							<div class="container-fluid">
+								<div class="row" style="background-color:#eaedeb;height:86.5%">
+								</div>
+							</div>
+						</div>
+
+						<div id="menu2" class="tab-pane fade">
+							<div class="container-fluid">
+								<div class="row" style="background-color:green;height:86.5%">
+								</div>
+							</div>
+						</div>
+
+						<div id="menu3" class="tab-pane fade">
+							<div class="container-fluid">
+								<div class="row" style="background-color:red;height:86.5%">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+  		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

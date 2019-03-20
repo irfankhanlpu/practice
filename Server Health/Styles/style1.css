@@ -1,0 +1,100 @@
+.col-md-3{
+background-color: black;
+width:120px;
+height:100%;
+color: green;
+
+}
+
+.input1
+{
+border-radius:15px;
+border:none;
+height:30px;
+margin:7px;
+}
+
+.btn1
+{
+height:100%;
+width:100%;
+background-color:white;
+border:none;
+}
+
+.btn1:hover
+{
+height:100%;
+width:100%;
+background-color:white;
+border:none;
+}
+
+.nav-bar-allignment 
+{
+ border-left-style: solid;
+ border-color: #b3b3b5;
+}
+
+.nav-bar-allignment:hover
+{
+ border-left-style: solid;
+ border-color: #b3b3b5;
+ background-color:white;
+}
+
+.nav-bar-font-color
+{
+color:white;
+}
+
+#block
+{
+height:200px; 
+width:100%; 
+margin-top:20px; 
+margin-bottom:20px; 
+border-radius:10px
+}
+
+#list-block
+{
+margin-top:20px; 
+margin-bottom:20px;
+border-radius:10px;
+background-color:white;
+font-size:25px;
+text-align:center;
+}
+
+#block-btn
+{
+height:25%;
+width:100%;
+border-radius:0px 0px 10px 10px;
+border:none;
+text-align:right;
+padding-right:40px;
+color:white;
+}
+
+#block-div
+{
+height:75%;
+width:100%;
+background-color:white;
+border-radius:10px 10px 0px 0px;
+text-align:right;
+padding-right:40px;
+}
+
+.span-max
+{
+font-size:70px;
+
+}
+
+.span-min
+{
+font-size:18px;
+}
